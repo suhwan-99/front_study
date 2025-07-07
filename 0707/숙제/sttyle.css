@@ -3,6 +3,51 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
-div{
+.정보입력{
   display: inline-block;
+}
+nav a{
+  text-decoration: none;
+  font-size: 20px;
+}
+input:focus{
+  background: chartreuse;
+}
+a:link{
+  color: black;
+}
+a:hover{
+  color: red;
+}
+
+a:active{
+  color: darkturquoise;
+}
+.float{
+  float: left;
+}
+.box > div{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.box{
+  animation-name: box;
+}
+
+.box1{
+  background: red;
+ 
+}
+.box2{
+  background: blue;
+
+}
+.box3{
+  background: aqua;
+
+}
+.box4{
+  background: chartreuse;
+
 }
