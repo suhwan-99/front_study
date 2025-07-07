@@ -1,0 +1,21 @@
+body{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2QbkW3oRDc4sPX92saw1VIREy4KXR6kdWgg&s");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 600px;
+  background-attachment: fixed;
+  /* background: linear-gradient(to right bottom, grey, black);
+  background: radial-gradient(circle, skyblue, blue); */
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+h1 {
+  background-color: bisque;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+p.bg {
+  background-color: rgba(100, 150, 200, 0.5);
+}
+p {
+  background-color: rgb(142, 245, 200);
+}

@@ -1,0 +1,30 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    background-color: yellow;
+}
+.이름 {
+    text-align: center;
+    
+}
+.box {
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 10px 50px 10px;
+    border: 1px solid red;
+}
+ul > li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+i {
+    display: flex;
+    display: block;
+}

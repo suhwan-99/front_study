@@ -1,0 +1,5 @@
+/* 하위 선택자 */
+#first p { color: darkorange; background-color: black;}
+#second > p{color: blueviolet; background-color: blanchedalmond;} 
+p.inner {color: rgba(5, 81, 83, 0.973);}
+

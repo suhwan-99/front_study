@@ -1,0 +1,15 @@
+.nav > li {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+  background-color: bisque;
+  
+}
+a {
+  text-decoration: none;
+}
+i {
+  font-size: 40px;
+  color: darkgoldenrod;
+}

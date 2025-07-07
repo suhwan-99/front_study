@@ -1,0 +1,10 @@
+/* 전체 선택자 */
+* { color: rgb(115, 255, 0); font-style: oblique;} 
+/* 태그 선택자 */
+h1 {background-color: black; font-size:100;}
+/* 아이디 선택자 */
+#title { background-color:brown; text-align: center;}
+/* 클래스 선택자 */
+/* .는 클래스, 여러 선택자는 ,를 사용 */
+.co,h3 {background-color: blue; color: black; text-align: center; 
+  font-size: 50px; font-style: normal;}

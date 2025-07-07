@@ -1,0 +1,42 @@
+p { font-size: 30px; font-weight: 500;}
+
+
+body { 
+  /* 줄간격 */
+  /* 16px = 1em = 100% */
+  line-height: 200%;
+  /* 글꼴 */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  /* 소문자를 대문자로 바꿈 */
+  /* font-variant: small-caps; */
+
+  /* 모든걸 한번에 적용 */
+  /* font: font-style font-weight font-family font-variant; */
+}
+/* 줄간격, 크기부터 하고 글꼴 작성 */
+p {font: italic 150% 30px cambria;
+  font: italic 100% 20px cochin;
+}
+h5 {
+  /* 글 크기 */
+  font-size: 200%;
+  /* 글 굵기 */
+  font-weight: 100;
+  /* 글꼴 색 */
+  color: gray;
+  /* 텍스트 효과 */
+  text-decoration: underline;
+  /* 대소문자 설정 */
+  text-transform: lowercase;
+  /* 그림자 */
+  /* 가로 세로 그림자퍼짐 그림자 색 */
+  text-shadow: 1px 2px 2px gray, 2px 3px 3px aqua;
+  /* 글자사이의 간격 */
+  letter-spacing: 2px;
+  /* 단어사이 간격 */
+  word-spacing: 3px;
+  
+  text-align: center;
+
+}

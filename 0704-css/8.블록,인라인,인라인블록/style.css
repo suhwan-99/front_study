@@ -1,0 +1,36 @@
+span, a{
+  border: 1px solid red;
+}
+/* 인라인요소는 크기지정을 못함 */
+/* 상하 마진도 적용 불가 */
+span {
+  width: 100px;
+  height: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* 좌우마진,패딩은 가능함 */
+a {
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 5px;
+}
+i {
+  /* 인라인이었던 i가 블럭이 됨 */
+  display: block;
+  border: 1px solid red;
+  width: 150px;
+  height: 150px;
+}
+/* 블록이었던 li를 인라인블록으로 바꿈 */
+ul > li {
+  display: inline-block;
+  border: 1px solid blue;
+  width: 100px;
+  height: 30px;
+  text-align: center; 
+  padding: 10px;
+}
+ul {
+  text-align: center;
+}

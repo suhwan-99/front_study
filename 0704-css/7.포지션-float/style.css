@@ -1,0 +1,30 @@
+.float{
+  float:left;
+}
+.clear{
+  clear: both;
+}
+.box {
+  width: 100px;
+  height: 100px;
+}
+.box1 {
+  background-color: aqua;
+}
+.box2{
+  background-color: bisque;
+}
+.box3{
+  background-color: blueviolet;
+  float: right;
+}
+.box4{
+  background-color: black;
+  /* 블록을 가운데로 보내고 싶을땐 margin: auto; 사용 */
+  margin: auto;
+}
+.container{
+  height: 200px;
+  border: 1px solid red;
+  overflow: scroll;
+}

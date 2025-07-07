@@ -1,0 +1,22 @@
+ol {
+  list-style-type: lower-roman;
+  
+}
+ul > li {
+  /* list-style-image: url("../../images/apeach.jpeg"); */
+  /* list-style-type: none;
+  background-color: whitesmoke;
+  background-image: url("../../images/garen.jpg");
+  /* 배경을 반복 안할거면 */
+  /* background-repeat: no-repeat;
+  background-size: 5px;
+  background-position: left center; */
+  /* 바깥 여백 */
+  /* margin: 0; */
+  /* 안쪽 여백 위 오른쪽 아래 왼쪽*/
+  /* padding: 20px 0 20px 10px; */ 
+}
+
+ul {
+  list-style-position: outside;
+}

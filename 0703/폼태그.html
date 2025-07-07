@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- action은 서버 주소 method는 전송메서드 -->
+   <!-- get은 url뒤에 퀴리스트링 형태로 값을 전송, 
+    전송 데이터 비밀이 보장 안됨, 전송 가능한 용량 제한적 -->
+
+    <!-- post는 값 전송 자체가 요청 객체에 포함, 보안 유지(로그인,회원가입), 크기제한 x -->
+  <form action="https://www.google.com/search" method="get">
+    <input type="text" name="q">
+    <input type="submit" value="검색">
+  </form>
+  <!-- autofocus는 커서를 자동으로 깜박거려주는 기능 -->
+  <form>
+    <input type="text" size="10" maxlength="5" autofocus minlength="2"><br>
+    <input type="text" placeholder="아이디 입력"><br>
+    <input type="text" placeholder="비밀번호 입력"><br>
+    <input type="button" value="로그인"><br>
+    <input type="text" value="abc" readonly><br>
+    <input type="text" value="abc" disabled><br>
+    <!-- required는 필수로 입력 -->
+    <input type="text" required><br>
+    <input type="submit" value="전송" >
+  </form>
+
+  <form>
+    텍스트: <input type="text"><br>
+    비밀번호: <input type="password"><br>
+    체크박스: <input type="checkbox" name="chkbox" value="java" checked > java
+              <input type="checkbox" name="chkbox" value="css" > css
+              <br>
+   라디오버튼: <input type="radio" name="yes-or-no" value="yes" checked> 이거
+              <input type="radio" name="yes-or-no" value="no"> 저거
+  <input id="agree" type="checkbox"><label for="agree">약관동의</label>
+  <br><br>
+  <input type="submit" value="전송">
+  <input type="reset" value="리셋">
+  <input type="button" value="버튼" onclick="alert('버튼누름')">
+  <button>버튼2</button>
+
+  <input type="file">
+  <textarea rows="10" cols="30"></textarea>
+
+
+  <select name="color">
+    <option value="red">빨강</option>
+    <option value="green" selected>초록</option>
+    <option value="yellow">노랑</option>
+    <option value="orange">주황</option>
+  </select>
+
+  <input type="hidden">
+  <input type="date">
+  </form>
+</body>
+</html>

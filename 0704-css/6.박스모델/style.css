@@ -1,0 +1,25 @@
+/* 처음에 이렇게 세팅하고 시작하는게 좋음*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+}
+
+h1{
+
+  
+  border: 1px solid red;
+  /* border-style: dashed; */
+  /* border-radius: 5%; */
+  border-top-left-radius: 5%;
+  border-top-color: blue ;
+  border-bottom-width: 3px;
+
+  padding: 3px;
+  margin: 12px;
+
+  width: 350px;
+  height: 300px;
+  /* 박스 안쪽에 그림자는 inset 넣으면 됨 */
+  box-shadow: inset -5px -5px 3px black;
+}
