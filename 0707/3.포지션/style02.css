@@ -1,0 +1,49 @@
+body{
+  height: 3000px;
+}
+.flx{
+  width: 150px;
+
+  /* 브라우저 기준 */
+  position: fixed;
+  left: 400px;
+}
+.sti{
+  background-color: aqua;
+/* 네비바를 따라오게 만들땐 */
+  position: sticky;
+  top: 0;
+/* 투명도 */
+  opacity: 0.5;
+  /* 우선순위? */
+  z-index: 99;
+}
+.container{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+.container > div{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.box1{
+  background-color: chartreuse;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+}
+.box2{
+  background-color: darkorange;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+.box3{
+  background-color: bisque;
+  top: 30px;
+  left: 30px;
+  z-index: 4;
+}

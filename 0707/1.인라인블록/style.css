@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li{
+  width: 100px;
+  height: 200px;
+  border: 1px solid red;
+  display: inline-block;
+  font-size: 16px;
+}
+ul {
+  font-size: 0;
+}
+.hid{
+  /* 숨김처리 코드 */
+  /* visibility: hidden; */
+  /* 해당 영역은 남아있음 */
+
+  /* 숨김처리도 되고 영역도 사라짐 */
+  display: none;
+}
