@@ -91,22 +91,26 @@ table a{
   text-decoration: none;
 }
 .down{
+  width: 300px;
+  height: 200px;
   float: right;
   text-align:center;
-  justify-content:end;
-  width: 300px;
-  height: 300px;
-  border: 1px solid red;
+  margin-bottom: 200px;
+  
 }
 .down a{
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: black;
   background-color: rgb(230, 224, 224);
   border-radius: 10px;
-  justify-content: end;
 }
 span{
-  float: right;
+  background-color: white;
   font-size: 20px;
+  color: black;
+}
+.down i {
+  margin-top: 30px;
+  font-size: 25px;
 }
