@@ -1,0 +1,56 @@
+/* before, after은 인라인 / content는 필수로 적어놔야함 */
+h1::before{
+  content: "ㅁ";
+  color: aqua;
+}
+
+h1::after{
+  content: "new";
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  position: absolute;
+}
+.img{
+  width: 400px;
+  height: 400px;
+  background:url('../../images/gangplank.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.img::before{
+  content: "갱플랭크";
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  line-height: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container > div{
+  float: left;
+  height: 50px;
+}
+
+.content{
+  background-color: aqua;
+  width: calc(100% - 200px);
+}
+.aside{
+  background-color: chartreuse;
+  width: 200px;
+}
+
+/* 인라인,인라인블록들을 세로 + 가운데로 할때 */
+.wrapper > b{
+  font-size: 40px;
+  vertical-align: middle;
+}

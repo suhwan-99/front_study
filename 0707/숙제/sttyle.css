@@ -6,15 +6,12 @@ body{
 .정보입력{
   display: inline-block;
 }
-nav a{
+.pagination > a{
   text-decoration: none;
   font-size: 20px;
 }
 input:focus{
   background: chartreuse;
-}
-a:link{
-  color: black;
 }
 a:hover{
   color: red;
@@ -23,31 +20,27 @@ a:hover{
 a:active{
   color: darkturquoise;
 }
-.float{
-  float: left;
-}
-.box > div{
+.container div{
   width: 100px;
   height: 100px;
   margin: 5px;
+  display: inline-block;
+  transition: all 0.5s ease;
 }
-.box{
-  animation-name: box;
-}
-
-.box1{
+.container div:nth-child(1){
   background: red;
- 
 }
-.box2{
-  background: blue;
-
-}
-.box3{
+.container div:nth-child(2){
   background: aqua;
-
 }
-.box4{
-  background: chartreuse;
 
+.container div:nth-child(3){
+  background: grey;
+}
+.container div:nth-child(4){
+  background: greenyellow;
+}
+.container div:hover{
+  box-shadow: 10px 10px 10px gray;
+  transform: scale(1.2);
 }

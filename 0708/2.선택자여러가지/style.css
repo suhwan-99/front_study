@@ -1,0 +1,15 @@
+/* 동위 선택자 */
+/* 기준 요소 뒤 부터 형제들을 선택 */
+h1 ~ p{
+  background: red;
+}
+
+/* 기준 요소 뒤부터 가장 가까운 형제 1개만 */
+h1 + p{
+  color: white;
+}
+
+
+input[type="checkbox"]:checked + label{
+  background-color: aqua;
+}
