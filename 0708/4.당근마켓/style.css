@@ -2,113 +2,128 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 body{
   width: 1200px;
-  height: 3000px;
+  margin: auto;
 }
 header{
-  padding: 3px;
+  padding: 15px;
+  width: 100%;
   position: sticky;
   top: 0;
-  overflow: auto;
-  border: 1px solid red;
   display: flex;
   z-index: 99;
-  opacity: 1;
   background-color: white;
+  justify-content: space-around;
 }
 .logo > img{
-  width: 120px;
-  height: 50px;
+ width: 180px;
 }
 header a {
-  text-decoration: none;
   color: black;
   margin: 5px;
 }
-a:hover{
+header a:hover{
   color: #ff8a3d;
 }
-nav{
-  margin: 10px;
-}
 nav > ul > li{
+  padding: 10px;
   display: inline-block;
   font-size: 25px;
+  font-weight: bold;
 }
-.검색{
-  float: right;
+.left-menu, .right-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.main1{
+input[type="search"]{
+  width: 250px;
+  height: 40px;
+  font-size: 15px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+.chat{
+  height: 50px;
+  width: 100px;
+  background-color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.right-menu > form{
+  margin-right: 10px;
+}
+main{
+  margin-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+#article{
+  width: 100%;
+}
+#article-top h1, #article-bottom h1{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+#article-top{
   background-color: #FBF7F2;
-  height: 685px;
   display: flex;
+  padding-left: 30px;
   align-items: center;
+  justify-content: space-around;
+  
 }
-.main1 > div{
-  margin-left: 100px;
-}
-.main1 > div > p{
-  font-size: 40px;
-}
-.main2{
+#article-bottom{
+  background-color: white;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  padding-right: 30px;
+  text-decoration: none;
 }
-.main2 > div{
-  margin-right: 100px;
-}
-.main2 div > p{
-  font-size: 40px;
-}
-span{
-  font-size: 16px;
-}
-.main2 a {
-  font-size: 25px;
+#article-bottom > div > a {
   background-color: rgb(230, 224, 224);
   border-radius: 10px;
-  text-align: center;
-  justify-content: center;
-  margin: 30px;
-  text-decoration: none;
   color: black;
+  width: bold;
+  font-size: 20px;
+  margin-left: 10px;
 }
 .contect{
   float: left;
-
 }
-table{
+footer{
   margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
 }
-table a{
-  margin-left: 100px;
+footer > div:nth-child(1){
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
   table-layout: fixed;
   font-size: 25px;
-  color: black;
-  text-decoration: none;
+}
+footer li {
+  padding: 15px;
+  list-style: none;
 }
 .down{
-  width: 300px;
-  height: 200px;
-  float: right;
-  text-align:center;
+  margin: 20px;
   margin-bottom: 200px;
-  
 }
 .down a{
-  text-decoration: none;
   font-size: 20px;
   color: black;
   background-color: rgb(230, 224, 224);
   border-radius: 10px;
-}
-span{
-  background-color: white;
-  font-size: 20px;
-  color: black;
 }
 .down i {
   margin-top: 30px;

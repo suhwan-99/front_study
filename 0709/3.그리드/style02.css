@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}.container{
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 320px;
+}
+.card{
+  padding: 5px;
+}
+.container > div{
+  text-align: center;
+  box-shadow: 2px 2px 2px gray;
+  border: 1px solid black;
+}
+img{
+  width: 250px;
+  height: 150px;
+}
+
+@media (max-width: 476px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
