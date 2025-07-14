@@ -39,21 +39,41 @@ for(let i = 0; i < cart.length; i++){
   cart[i].addEventListener('click', (e) =>{
    let nameTag = e.target.previousElementSibling.previousElementSibling;
    let name = nameTag.innerHTML;
+
+   // 로컬스토리지에 있으면 먼저 그 정보들을 꺼내와야 함
    let temp = localStorage.getItem('cart');
+
+   // 장바구니에 넣으려는 과일이 로컬스토리지에 있는지 여부를 알려주는 변수
+   let isHave = false;
+   // 장바구니에 넣을 과일이 로컬스토리지에 있으면 몇번째에 있는지 알려주는 변수
+   let index;
    if( temp != null){
-    // 로컬스토리지에 있으면 먼저 그 정보들을 꺼내와야 함
     // 문자열 형태이므로 원본인 배열로 되돌리기
     temp = JSON.parse(temp);
-    // 새로 장바구니에 담을 name을 추가
-    temp.push(name);
+    // 꺼내온 정보가 장바구니에 있는지 없는지 확인
+    temp.forEach( (data, i) => {
+      if(data.name === name) {
+        isHave =true;
+        index = i;
+      } 
+    });
+    // 위 반복문에서 기존 로컬스토리지에 해당 과일의 유무 검사를 끝냈으니 결과에 따라 다르게 처리
+    if(isHave) {
+      temp[index].cnt++;
+    } else {
+      temp.push( { 'name' : name, 'cnt' : 1} );
+    }
     // 추가된 정보를 로컬에 다시 넣음
     localStorage.setItem('cart', JSON.stringify(temp));
 
    } else{
-    localStorage.setItem('cart', JSON.stringify( [name] ) );
+    // 로컬스토리지 자체가 비어있을 경우
+    localStorage.setItem('cart', JSON.stringify( [ {'name' : name, 'cnt' : 1} ] ) );
    }
   });
 };
+
+
 // beforebegin: 해당 요소 앞에 html을 넣어줌
 // beforeend: 해당 요소 마지막(내부) 자식으로 추가
 // afterbegin: 해당요소 첫번째 자식으로 추가

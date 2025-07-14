@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  width: 300vw;
+  display: flex;
+  transition: all 1s;
+}
+.box > img {
+  width: 100%;
+}
+.wrapper {
+  overflow: hidden;
+}
+button{
+  padding: 5px;
+  margin: 5px;
+}

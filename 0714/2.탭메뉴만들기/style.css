@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  padding: 20px;
+}
+.list{
+  list-style-type: none;
+  display: flex;
+}
+.tab-button {
+  padding: 10px;
+  color: lightgray;
+  cursor: pointer;
+}
+li:hover{
+  color: black;
+}
+.selected{
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+}
+.tab-content{
+  display: none;
+  padding: 15px;
+}
+.show{
+  display: block;
+}
